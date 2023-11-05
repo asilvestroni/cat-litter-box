@@ -47,8 +47,15 @@ The following kits have not been tested but might be compatible:
 This project uses the board's default configuration.
 
 ## Software setup
+Import the `cat-litter-box.code-workspace` file into VSCode. Edit the `settings.modustoolbox.toolsPath` by specifying the path to your `tools` directory inside the Modus Toolbox path (e.g. on Linux is usually `~/ModusToolbox/tools_VERSION`).
+
+Execute:
 ```bash
 make getlibs
+```
+
+## Build
+```bash
 make build
 make program
 ```
